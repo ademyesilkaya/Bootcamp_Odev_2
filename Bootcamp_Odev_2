@@ -1,0 +1,37 @@
+#SORU 1
+Gunler ={
+    "1":"Pazartesi",
+    "2":"Salı",
+    "3":"Çarşamba",
+    "4":"Perşembe",
+    "5":"Cuma",
+    "6":"Cumartesi",
+    "7":"Pazar"
+}
+
+print(Gunler)
+secilen_1 = input("Silinecek birinci günün numarasını giriniz:")
+del Gunler[secilen_1]
+secilen_2 = input("Silinecek ikinci günün numarasını giriniz:")
+del Gunler[secilen_2]
+print(Gunler)
+
+#SORU 2
+Aylar = {'Ocak':31, 'Şubat':28, 'Mart':31, 'Nisan':30, 'Mayıs':31, 'Haziran':30, 'Temmuz':31, 
+         'Ağustos':31, 'Eylül':30, 'Ekim':31, 'Kasım':30, 'Aralık':31}
+print(Aylar.items())
+
+#SORU 3
+Aylar_1 = list(Aylar.keys())
+Gunler = list(Aylar.values())
+Top_list = [Aylar_1,Gunler]
+print(Top_list,sep="\n")
+
+#SORU 4
+ilkbahar = ['Mart', 'Nisan', 'Mayıs']
+yaz =['Haziran', 'Temmuz','Ağustos']
+sonbahar =['Eylül', 'Ekim', 'Kasım']
+kıs = ['Aralık', 'Ocak', 'Şubat']
+
+#SORU 5
+print(Aylar["Haziran"]+Aylar["Temmuz"]+Aylar["Ağustos"])
